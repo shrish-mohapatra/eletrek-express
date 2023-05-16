@@ -1,0 +1,47 @@
+{
+    "testNodes": [
+        {
+            "shape": "triangle",
+            "x": 120,
+            "y": 80,
+            "passengers": [1,1,2]
+        },
+        {
+            "shape": "circle",
+            "x": 100,
+            "y": 350,
+            "passengers": [0]
+        },
+        {
+            "shape": "square",
+            "x": 250,
+            "y": 200,
+            "passengers": []
+        },
+        {
+            "shape": "triangle",
+            "x": 500,
+            "y": 100,
+            "passengers": [1,2]
+        },
+        {
+            "shape": "circle",
+            "x": 300,
+            "y": 470,
+            "passengers": [0,1]
+        },
+        {
+            "shape": "triangle",
+            "x": 450,
+            "y": 450,
+            "passengers": [2,2,2,2,2,2]
+        }
+    ],
+    "testLines": [
+        [0,1],
+        [0,3],
+        [1,2,3,5],
+        [2,4,5],
+        [2,5]
+    ]
+}

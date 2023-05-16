@@ -1,0 +1,128 @@
+.subway {
+  height: 600px;
+}
+
+.modal {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  border: 1px solid #D7D7D7;
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  background-color: white;
+}
+
+.modal h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 0;
+}
+
+.lines {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+.line-label {
+  width: 28px;
+  height: 28px;
+  color: white;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+
+.metric {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -10px;
+  line-height: 0;
+  font-size: 14px;
+}
+
+.btn-group {
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 12px 20px;
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+  border-radius: 10px;
+  width: 120px;
+  font-family: Inter;
+}
+
+.btn-clear {
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-clear:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.btn-primary {
+  border: none;
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Circle animation */
+.button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  animation: loading 1s linear infinite;
+  display: none;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Show/hide circle animation */
+.button.loading::before {
+  display: block;
+}
+.button.loading {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
